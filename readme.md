@@ -1,27 +1,57 @@
-# Laravel PHP Framework
+# Uso de la agenda de *Emmanuel Valverde Ramos - alumno 30*
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+----
+## Información en Homestead.yaml
+folders:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+    - map: ~/Documentos/proyectos/laravel
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+      to: /home/proyectos/laravel
 
-## Official Documentation
+sites:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+    - map: agendaemmanuel.local
 
-## Contributing
+      to: /home/proyectos/laravel/agendaemmanuel/public
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+databases:
 
-## Security Vulnerabilities
+    - agendaemmanuel
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+> Este archivo de configuración se encuentra en la carpeta oculta que se encuentra en el home del usuario y que tiene por nombre ".homestead".
 
-## License
+Ejemplo de uso en el archivo "**.env** "
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+`DB_USERNAME=homestead`
+
+`DB_PASSWORD=secret`
+
+\* Aunque en la carpeta que proporciono de la aplicación se encuentra mi archivo " **.env** ".
+
+----
+## Información del archivo hosts
+
+```192.168.10.10	agendaemmanuel.local```
+
+----
+## Información de Laravel Homestead
+> Puesto que la base de datos ha sido empleada en Laravel 5.2 homstead la contraseña de la base de datos es "secret"
+
+----
+## Información con respecto a la modo *DEBUG* de la aplicación
+> Puesto que entiendo que esta aplicación al ser entregada como si fuera entregada para producción me he tomado la libertad de 
+
+----
+##  Uso de la aplicación
+> Puesto que la aplicación se corresponde con el primer examen que realizamos, he tomado en consideración los siguientes puntos importantes en cuanto al diseño de la aplicación
+
+1. La ruta "/" lleva llama te lleva al login
+2. En el listado de contactos, en vez de tener el botón de borrado he decidido que lo pondría dentro del formulario de borrado.
+3. El buscador no tiene ordenación puesto que cuando le pregunté usted dijo "No hace falta".
+
+----
+## Versión 2.0
+**Fecha**: 4-Mar-2016
+**Autor**: *Emmanuel Valverde Ramos*
+
+[Repositorio github](https://github.com/khru/agendaemmanuel)
